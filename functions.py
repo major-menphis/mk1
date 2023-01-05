@@ -1,6 +1,6 @@
 # encoding=<utf-8>
 def calculate_loss_calory(TimeInHours, WeightInKg, SpeedInKmH):
-    """function to calculate estimated calorie loss in walking trips 
+    """function to calculate estimated calorie loss in walking trips
 
     Args:
         TimeInHours (int): time of journey
@@ -13,8 +13,9 @@ def calculate_loss_calory(TimeInHours, WeightInKg, SpeedInKmH):
     formula = TimeInHours * WeightInKg * SpeedInKmH
     return f'{formula:.2f} Kcal'
 
+
 def basal_energy_expenditure(WeightInKg, Height, Age, Sex='male'):
-    """Formula of Mifflin-St Jeo 
+    """Formula of Mifflin-St Jeo
     to calculate resting energy expenditure for day
     estimate to loss weight
 
@@ -34,4 +35,4 @@ def basal_energy_expenditure(WeightInKg, Height, Age, Sex='male'):
 
 if __name__ == '__main__':
     print(calculate_loss_calory(0.2833322, 104, 4.6))
-    print(basal_energy_expenditure(104, 1.78, 35, 'male'))
+    print(basal_energy_expenditure(104, 178, 35, 'male'))
